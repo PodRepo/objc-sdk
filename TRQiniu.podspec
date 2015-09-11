@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'TRQiniu'
-  s.version      = '7.0.13'
+  s.version      = '7.0.12'
   s.summary      = 'fork Qiniu Resource Storage SDK for iOS and Mac'
   s.homepage     = 'https://github.com/qiniu/objc-sdk'
   s.social_media_url = 'http://weibo.com/qiniutek'
@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
 
   s.source_files = 'QiniuSDK/**/*.{h,m}'
   s.exclude_files = "Classes/Exclude"
-  s.public_header_files = FileList["QiniuSDK/**/*.h"].exclude('QiniuSDK/Exclude/*.h')
+  s.private_header_files = 'QiniuSDK/Exclude/*.h'
 
   s.requires_arc = true
   s.libraries = 'z'
