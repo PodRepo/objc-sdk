@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
-  s.name         = 'Qiniu'
+  s.name         = 'TRQiniu'
   s.version      = '7.0.13'
-  s.summary      = 'Qiniu Resource Storage SDK for iOS and Mac'
+  s.summary      = 'fork Qiniu Resource Storage SDK for iOS and Mac'
   s.homepage     = 'https://github.com/qiniu/objc-sdk'
   s.social_media_url = 'http://weibo.com/qiniutek'
   s.author       = 'Qiniu => sdk@qiniu.com'
