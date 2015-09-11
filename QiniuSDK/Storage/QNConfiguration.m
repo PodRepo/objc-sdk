@@ -30,8 +30,9 @@ static QNDnsManager* initDns(QNConfigurationBuilder *builder) {
 	return d;
 }
 
-@interface QNConfiguration()
-@property (nonatomic, strong) QNDnsManager *dns;
+@interface QNConfiguration(){
+    QNDnsManager *_dns;
+}
 
 @end
 
