@@ -10,7 +10,6 @@
 
 #import "QNRecorderDelegate.h"
 
-#import "HappyDNS.h"
 
 /**
  *    断点上传时的分块大小
@@ -86,11 +85,12 @@ typedef void (^QNConfigurationBuilderBlock)(QNConfigurationBuilder *builder);
 
 @property (nonatomic, readonly) QNUrlConvert converter;
 
-@property (nonatomic, readonly) QNDnsManager *dns;
+
 
 + (instancetype)build:(QNConfigurationBuilderBlock)block;
 
 @end
+
 
 
 @interface QNZone : NSObject
@@ -185,6 +185,8 @@ typedef void (^QNConfigurationBuilderBlock)(QNConfigurationBuilder *builder);
 
 @property (nonatomic, assign) QNUrlConvert converter;
 
-@property (nonatomic, assign) QNDnsManager *dns;
+
 
 @end
+
+

@@ -13,9 +13,9 @@
 
 @interface QNHttpManager : NSObject <QNHttpDelegate>
 
-- (instancetype)initWithTimeout:(UInt32)timeout
-                   urlConverter:(QNUrlConvert)converter
-                            dns:(QNDnsManager *)dns;
+//- (instancetype)initWithTimeout:(UInt32)timeout
+//                   urlConverter:(QNUrlConvert)converter
+//                            dns:(QNDnsManager *)dns;
 
 - (void)    multipartPost:(NSString *)url
                  withData:(NSData *)data

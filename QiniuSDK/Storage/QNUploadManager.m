@@ -30,6 +30,9 @@
 #import "QNUpToken.h"
 #import "QNFile.h"
 
+#import "Qiniu+Dns.h"
+
+
 @interface QNUploadManager ()
 @property (nonatomic) id <QNHttpDelegate> httpManager;
 @property (nonatomic) QNConfiguration *config;

@@ -10,6 +10,9 @@
 #import "QNNetworkInfo.h"
 
 
+#import "HappyDNS.h"
+#import "Qiniu+Dns.h"
+
 const UInt32 kQNBlockSize = 4 * 1024 * 1024;
 
 static QNDnsManager* initDns(QNConfigurationBuilder *builder) {
@@ -26,6 +29,11 @@ static QNDnsManager* initDns(QNConfigurationBuilder *builder) {
 	[d putHosts:builder.zone.upHostBackup ip:builder.zone.upIp2];
 	return d;
 }
+
+@interface QNConfiguration()
+@property (nonatomic, strong) QNDnsManager *dns;
+
+@end
 
 @implementation QNConfiguration
 

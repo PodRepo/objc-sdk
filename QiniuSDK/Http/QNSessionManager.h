@@ -7,10 +7,10 @@
 
 @interface QNSessionManager : NSObject <QNHttpDelegate>
 
-- (instancetype)initWithProxy:(NSDictionary *)proxyDict
-                      timeout:(UInt32)timeout
-                 urlConverter:(QNUrlConvert)converter
-                          dns:(QNDnsManager*)dns;
+//- (instancetype)initWithProxy:(NSDictionary *)proxyDict
+//                      timeout:(UInt32)timeout
+//                 urlConverter:(QNUrlConvert)converter
+//                          dns:(QNDnsManager*)dns;
 
 - (void)    multipartPost:(NSString *)url
                  withData:(NSData *)data

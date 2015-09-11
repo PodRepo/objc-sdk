@@ -10,6 +10,7 @@
 		22019FE04FB937FAB13FDFFD /* libPods-QiniuSDK iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 389DF9365782A14F70933C3E /* libPods-QiniuSDK iOS.a */; };
 		5F0FFE6A946BAEFF741BC23E /* libPods-QiniuSDK Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8924D07F6E137C6379C173D4 /* libPods-QiniuSDK Mac.a */; };
 		7277FD17389341BDCAD29727 /* libPods-QiniuSDK iOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D41D651AEAB89853C760E3A /* libPods-QiniuSDK iOSTests.a */; };
+		C08809E91BA31B5600FE6C2F /* Qiniu+Dns.h in Headers */ = {isa = PBXBuildFile; fileRef = C08809E81BA31B5600FE6C2F /* Qiniu+Dns.h */; };
 		DF0A03231B3BABEC00E3778C /* libQiniuSDK Mac.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DF2CDDFF19DAC05500CE01FB /* libQiniuSDK Mac.dylib */; };
 		DF0A03241B3BAC3900E3778C /* QNFormUploadTest.m in Sources */ = {isa = PBXBuildFile; fileRef = DF3C504619DD7BA6000F548F /* QNFormUploadTest.m */; };
 		DF0A03251B3BAC5700E3778C /* libQiniuSDK iOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DF2CDE1A19DAC08400CE01FB /* libQiniuSDK iOS.a */; };
@@ -127,6 +128,7 @@
 		948F5D59B2BD6CACC644FA14 /* Pods-QiniuSDK MacTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QiniuSDK MacTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QiniuSDK MacTests/Pods-QiniuSDK MacTests.debug.xcconfig"; sourceTree = "<group>"; };
 		9A0CE9E3B1F13E790C38CB75 /* Pods-QiniuSDK iOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QiniuSDK iOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-QiniuSDK iOSTests/Pods-QiniuSDK iOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		C08809E01BA3190000FE6C2F /* TRQiniu.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = TRQiniu.podspec; sourceTree = "<group>"; };
+		C08809E81BA31B5600FE6C2F /* Qiniu+Dns.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Qiniu+Dns.h"; sourceTree = "<group>"; };
 		C24CE1990894CD3CA9A17042 /* Pods-QiniuSDK iOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QiniuSDK iOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QiniuSDK iOSTests/Pods-QiniuSDK iOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DB8C25D8ADEC1AAEAFE9BB8A /* Pods-QiniuSDK iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QiniuSDK iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QiniuSDK iOS/Pods-QiniuSDK iOS.debug.xcconfig"; sourceTree = "<group>"; };
 		DEC82F60B1102AD44ABC9284 /* Pods-QiniuSDK Mac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QiniuSDK Mac.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QiniuSDK Mac/Pods-QiniuSDK Mac.debug.xcconfig"; sourceTree = "<group>"; };
@@ -267,6 +269,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C08809E71BA31B1700FE6C2F /* Exclude */ = {
+			isa = PBXGroup;
+			children = (
+				C08809E81BA31B5600FE6C2F /* Qiniu+Dns.h */,
+			);
+			path = Exclude;
+			sourceTree = "<group>";
+		};
 		DF293C9B19DBC2AE00799011 /* Http */ = {
 			isa = PBXGroup;
 			children = (
@@ -316,6 +326,7 @@
 				DF2CDE4E19DAC6A400CE01FB /* Common */,
 				DF2CDE5819DAC6A400CE01FB /* QiniuSDK.h */,
 				DF2CDE5919DAC6A400CE01FB /* Storage */,
+				C08809E71BA31B1700FE6C2F /* Exclude */,
 			);
 			path = QiniuSDK;
 			sourceTree = "<group>";
@@ -403,6 +414,7 @@
 				DFF126F61B63ABED0005C39C /* QNALAssetFile.h in Headers */,
 				DF6099FA1A5676AA00AC7297 /* QNDns.h in Headers */,
 				DF437CD21B2426270099587B /* GTM_Base64.h in Headers */,
+				C08809E91BA31B5600FE6C2F /* Qiniu+Dns.h in Headers */,
 				DF293C9E19DBC2AE00799011 /* QNUserAgent.h in Headers */,
 				DF2CDE6719DAC6A400CE01FB /* QNVersion.h in Headers */,
 				DF293CA419DC04C200799011 /* QNHttpManager.h in Headers */,

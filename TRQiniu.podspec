@@ -11,6 +11,9 @@ Pod::Spec.new do |s|
   s.osx.deployment_target = '10.8'
 
   s.source_files = 'QiniuSDK/**/*.{h,m}'
+  s.exclude_files = "Classes/Exclude"
+  s.public_header_files = FileList["QiniuSDK/**/*.h"].exclude('QiniuSDK/Exclude/*.h')
+
   s.requires_arc = true
   s.libraries = 'z'
   s.dependency 'AFNetworking', '~> 2.0'
