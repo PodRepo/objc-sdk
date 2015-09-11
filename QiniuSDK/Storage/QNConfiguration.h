@@ -36,7 +36,7 @@ typedef void (^QNConfigurationBuilderBlock)(QNConfigurationBuilder *builder);
 
 
 @interface QNConfiguration : NSObject
-
+@property (nonatomic, strong) id dns;
 /**
  *    默认上传服务器地址
  */
@@ -146,7 +146,7 @@ typedef void (^QNConfigurationBuilderBlock)(QNConfigurationBuilder *builder);
 @end
 
 @interface QNConfigurationBuilder : NSObject
-
+@property (nonatomic, strong) id dns;
 /**
  *    默认上传服务器地址
  */
